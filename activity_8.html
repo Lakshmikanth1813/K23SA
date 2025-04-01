@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div>
+        <nav class="flex justify-evenly p-5 w-screen h-20 bg-gradient-to-r from-red-200 to-red-200">
+            <h1>home</h1> 
+            <h1>about us</h1>
+            <h1 id="contact">Contact us</h1>
+        </nav>
+        <div class="hidden flex justify-center" id="form">
+        <div class="w-80 h-48 bg-sky-200">
+            <div class="flex pt-10">
+                <h1 class="flex justify-center pr-10 pl-10">Name:</h1>
+                <h1 class="border border-black w-28 h-8 "></h1>
+            </div>
+
+        </div>
+    </div>
+        <div class="flex p-5">
+        <div class=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUsbmTZu_uMrmJ0z--CrG-o1UIXytu1OCizQ&s" alt="" class="w-screen"></div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum odit aperiam ipsam aliquam iste hic quaerat, delectus saepe tempora ut! Aspernatur impedit blanditiis reprehenderit esse dolorum nam. Animi, odio cum!
+        </div>
+    </div>
+
+    <footer class="flex border">
+        <div class="text-center p-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam temporibus</div>
+        <div class="text-center p-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam temporibus</div>
+        <div class="text-center p-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam temporibus</div>
+        <div class="text-center p-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam temporibus</div>
+
+    </footer>
+    </div>
+    <script>
+       let contact= document.getElementById("contact")
+       contact.addEventListener("click,contactus")
+       let form=document.getElementById("form")
+       function contactus(){
+        if(form.classList.contains("hidden")){
+            form.classList.remove("hidden")
+        }else{
+            form.classList.add("hidden")
+        }
+       }
+    </script>
+</body>
+</html>
